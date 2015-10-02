@@ -57,7 +57,7 @@
 		<article  class="post clearfix">
 
 			<header  >
-				<h1 class="post-title"><a href="#">AlumnoNombre.Apellido</a></h1>
+				<h1 class="post-title"><a href="#">Gaston Monteveña</a></h1>
 				<p class="post-meta"><time class="post-date" datetime="2011-05-08" pubdate>2015</time> <em>en</em> <a href="#">UTN FRA</a></p>
 			</header>
 			<hr>
@@ -66,6 +66,26 @@
 <?php
 
 ?>
+ <div id="formLogin" class="container">
+
+      <form  class="form-ingreso " onsubmit="validarLogin();return false;">
+        <h2 class="form-ingreso-heading">Ingrese su Dni</h2>
+        <label for="correo" class="sr-only">DNI</label>
+                <input type="email" id="correo" class="form-control" placeholder="DNI" required="" autofocus="" value="<?php  if(isset($_COOKIE["registro"])){echo $_COOKIE["registro"];}?>">
+        
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="recordarme" checked> Recordame
+          </label>
+          
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+     
+      </form>
+
+
+
+    </div> <!-- /container -->
 			</div>		
 
 		</article>
